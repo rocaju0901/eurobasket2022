@@ -27,7 +27,9 @@ CREATE TABLE `partidos_fase` (
   `grupo` varchar(21) DEFAULT NULL,
   `pais1` varchar(21) DEFAULT NULL,
   `pais` varchar(21) DEFAULT NULL,
-  `resultado` varchar(20) DEFAULT NULL
+  `resultado` varchar(20) DEFAULT NULL,
+  `fecha` timestamp NULL DEFAULT NULL,
+  `hora` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -39,51 +41,6 @@ LOCK TABLES `partidos_fase` WRITE;
 /*!40000 ALTER TABLE `partidos_fase` DISABLE KEYS */;
 /*!40000 ALTER TABLE `partidos_fase` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Table structure for table `resultados_fase`
---
-
-DROP TABLE IF EXISTS `resultados_fase`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `resultados_fase` (
-  `fase` varchar(11) DEFAULT NULL,
-  `grupo` varchar(21) DEFAULT NULL,
-  `Pais` varchar(21) DEFAULT NULL,
-  `resultado` varchar(2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `resultados_fase`
---
-
-LOCK TABLES `resultados_fase` WRITE;
-/*!40000 ALTER TABLE `resultados_fase` DISABLE KEYS */;
-/*!40000 ALTER TABLE `resultados_fase` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `table_name`
---
-
-DROP TABLE IF EXISTS `table_name`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `table_name` (
-  `column_name` int DEFAULT NULL COMMENT 'qw eq'
-) ENGINE=InnoDB DEFAULT CHARSET=binary COMMENT='jhweodh rbfjkhsdb';
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `table_name`
---
-
-LOCK TABLES `table_name` WRITE;
-/*!40000 ALTER TABLE `table_name` DISABLE KEYS */;
-/*!40000 ALTER TABLE `table_name` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -94,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-22 10:31:20
+-- Dump completed on 2022-12-22 10:43:32
