@@ -4,4 +4,8 @@ CREATE TABLE PRUEBA(
     ),
 CREATE TABLE PRUEBA2(
     PRUEBA3 NUMBER(3)
+);
+create table pruebas3(
+    prueba3 varchar(4)
 )
+drop table pruebas2;
