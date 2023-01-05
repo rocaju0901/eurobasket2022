@@ -1,3 +1,4 @@
+/*CREAMOS LA BASE DE DATOS DE EUROBASKET*/
 CREATE DATABASE EUROBASKET;
 
 /*Creamos la fase inicial en donde encontraremos la fase inicial con todos los paisees encuadrados en  los grupos*/
