@@ -60,24 +60,28 @@ todos los paises participantes (A, B, C, D) y las seis columnas para los paises 
 Similar a la primera tabla, con la diferencia de que esta tabla se emplea para los grupos de octavos de final
 
 ![](imagenes/octavos de final.png)
+
 ![](imagenes/octavos datos.png)
 
 #### Cuartos de final
 Esta tabla va dirigido para los cuartos de final
 
 ![](imagenes/cuartos de final.png)
+
 ![](imagenes/cuartos datos.png)
 
 #### Semifinal
 Esta tabla muestra los cuatro equipos finalistas
 
 ![](imagenes/Semifinal.png)
+
 ![](imagenes/Semifinal datos.png)
 
 #### Final
 Muestra los dos equipos que han llegado a la final
 
 ![](imagenes/final.png)
+
 ![](imagenes/final datos.png)
 ### Tabla MvP:
 La tabla MvP permite muestra a los mejores jugadores que mejor han jugado en toda la temporada indicado
