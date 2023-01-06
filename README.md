@@ -1,7 +1,8 @@
 # Eurobasket 2022
 ### Implicados: Lucas, Juan y Daniel Perez
 En el proyecto de creación de la base de datos de Eurobasket de 2022 Masculino en MySQL la tabla que debemos crear 
-una base donde contenga las tablas
+una base donde contenga las tablas necesarias para organizar todos los datos de los partidos, puntos, equipos y 
+posiciones del torneo de Eurobasket.
 
 
 ![](imagenes/proyecto_clase_04.jpeg)
@@ -78,18 +79,22 @@ Esta tabla muestra los cuatro equipos finalistas
 ![](imagenes/Semifinal datos.png)
 
 #### Final
-Muestra los dos equipos que han llegado a la final
+Muestra los dos equipos que han llegado a la final del torneo
 
 ![](imagenes/final.png)
 
 ![](imagenes/final datos.png)
-### Tabla MvP:
-La tabla MvP permite muestra a los mejores jugadores que mejor han jugado en toda la temporada indicado
-el pais al que pertenencen y su nombre
+
 ### Tabla CLASIFICACIÓN:
 La tabla CLASIFICACIÓN muestra los puestos en los que se encuentran cada equipo, la posición 
 final en la que se encuentran, el número de partidas totales jugados por el equipo, los partidos ganados y los perdidos
 ![](imagenes/clasificacion general.png)
+
+### Tabla Partido_Fase:
+En esta tabla se muestra los partidos realizados en las diferentes fases, los equipos que participan en
+el partido y la fecha y hora que sea realizado el partido
+
+![](imagenes/partidos_fase.png)
 
 ## Conexión
 ![Conexion](imagenes/proyecto_clase_03.jpeg)
@@ -105,6 +110,12 @@ datos: tuvimos que informarnos de como se debía realizar la instalación, debid
 sin informarnos antes y a ciegas, haciendo que la instalación sea confusa y sin idea de que opciones nos convienen mejor
 o cuales no. Cuando conseguimos finalmente instalar MySQL estuvimos comprobando como hacer que la base se conecte a 
 MySQL, al final no hacía falta crear la base de datos con la aplicación de MySQL, ya que se puede crear utilizando
-DataGrip y MySQL detecta la base de datos creada desde DataGrip
+DataGrip y MySQL detecta la base de datos creada desde DataGrip.
+
+Una de las dificultades que hemos sufrido asido la sintaxis, debido eso hemos sufrido problemas para introducir datos y 
+otras opciones, debido a que, si bien Oracle y MySQL comparten ciertas similitudes en la sintaxis, cosas como el modo de 
+añadir restricciones a las columnas:
+En Oracle se añade "Contraint" "El nombre de la restringión" "La registrión"
+En MySQL se debe añadir únicamente la restrinción que tendra la columna
 
 
