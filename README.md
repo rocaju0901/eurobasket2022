@@ -79,7 +79,7 @@ Esta tabla muestra los cuatro equipos finalistas
 ![](imagenes/Semifinal datos.png)
 
 #### Final
-Muestra los dos equipos que han llegado a la final del torneo
+Muestra los dos equipos que han llegado a la final del torneo de Eurobasket
 
 ![](imagenes/final.png)
 
