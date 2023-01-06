@@ -7,25 +7,90 @@ una base donde contenga las tablas
 ![](imagenes/proyecto_clase_04.jpeg)
 
 ## Instalación
+Se debe descargar el instalador de MySQL de su página oficial https://www.mysql.com/. (hay dos instaladores, el que pesa
+más permite realizar la instalación sin internet y el otro que es más ligero emplea internet para instalar el programa) 
+
+Cuando se tenga ya descarga el instalador de MySQL, al iniciar la instalación saldra saldra una ventana de aceptar es
+uso de licencia. La segunda opción que saldra te pedira elegir el tipo de instalación que vas a realizar en función del
+uso que le vayas a dar:
+- Default
+- Server only
+- Client only
+- Full
+- Custom
+
+Elegimos default, ya que las opciones Default y Full para crear base de datos, siendo Server only para cargar base de
+datos ya existentes. La opción "Custom" te permite elegir que productos instalar y cuales no en función de lo que vayas 
+a utilizar.
+En el apartado de Instalación nos indicara los productos que se van a instalar 
+
+Una vez realizado lo anterior, deberemos acceder al apartado de configuración de MySQL
+
+#### Configuración de MySQL
+En la primera parte nos pedira que haga configuraciones del tipo de configuración, que se divide en tres:
+- Development Computer: Pensado para equipos dedicados al desarrollo con MySQL. Consume en la medida de lo posible la 
+memoria RAM 
+- Server Computer: para equipos que van a realizar la función de servidor y no se va a emplear como una herramienta de
+desarrollo
+- Dedicated Computer: es para aquellos equipos dedicados para el uso exclusivo de MySQL
+
+Puedes también el tipo de puerto a emplear para conectarse al servidor
+
+En la siguiente ventana debemos elegir el metodo para autentificarnos con una contraseña para el root. Luego podemos 
+añadir a otro usuario con su permisos y contraseña para evitar utilizar unicamente el root
+
+Luego nos saldra una ventana donde podremos configurar MySQL como un servicio de Windows y añadirle un nombre. Ademas
+podemos el modo de arranque del servicio como un usuario normal o como uno personalizado
+
+Al final saldra una ventana con un resumen de todo lo que se va a ejecutar y realizar la instalación con toda la 
+configuración
 
 ## Diseño
 
 La base de datos que tenemos que realizar es la de **Eurobasket 2022 del torneo Masculino**.
 Contiene seis tablas en total:
-### Tabla GRUPOS:
-La tabla GRUPOS contiene los grupos (A, B, C, D) y el nombre de los paises que juegan en cada grupo
 
-### Tabla PARTIDOS-FASES y tabla resultados fases:
-La tabla PARTIDOS-FASES muestra los partidos que se han realizado de los grupos en cada fase, con el equipo 1 contra
-el equipo 2 y con un resultado de los puntos que han conseguido cada uno. La tabla FASES permite indica los grupos 
-y sus equipos en la fase que se encuentran 
-![Tabla de partidos y resultados fases](imagenes/proyecto_clase.jpeg)
+### Tablas de fases:
+#### Primera fase
+En la table de la Primera fase tiene siete columnas: la columna con la clave primaria llamada grupo donde se divide a
+todos los paises participantes (A, B, C, D) y las seis columnas para los paises que se encuentran dentro de cada grupo
+![](imagenes/Fase 1.png)
+
+#### Octavos de final
+Similar a la primera tabla, con la diferencia de que esta tabla se emplea para los grupos de octavos de final
+
+![](imagenes/octavos de final.png)
+
+![](imagenes/octavos datos.png)
+
+#### Cuartos de final
+Esta tabla va dirigido para los cuartos de final
+
+![](imagenes/cuartos de final.png)
+
+![](imagenes/cuartos datos.png)
+
+#### Semifinal
+Esta tabla muestra los cuatro equipos finalistas
+
+![](imagenes/Semifinal.png)
+
+![](imagenes/Semifinal datos.png)
+
+#### Final
+Muestra los dos equipos que han llegado a la final
+
+![](imagenes/final.png)
+
+![](imagenes/final datos.png)
 ### Tabla MvP:
 La tabla MvP permite muestra a los mejores jugadores que mejor han jugado en toda la temporada indicado
 el pais al que pertenencen y su nombre
-### Tabla CLASIFICACIÓN-GENERAL:
-La tabla CLASIFICACIÓN-GENERAL muestra los puestos en los que se encuentran cada equipo, la posición 
+### Tabla CLASIFICACIÓN:
+La tabla CLASIFICACIÓN muestra los puestos en los que se encuentran cada equipo, la posición 
 final en la que se encuentran, el número de partidas totales jugados por el equipo, los partidos ganados y los perdidos
+![](imagenes/clasificacion general.png)
+
 ## Conexión
 ![Conexion](imagenes/proyecto_clase_03.jpeg)
 En la captura de pantalla se puede visionar las conexiones que se han realizado. Cada conexión tiene una ID, el usuario
